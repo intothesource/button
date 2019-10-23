@@ -1,0 +1,43 @@
+{
+  "name": "@intothesource/button",
+  "version": "1.0.0",
+  "description": "Material style button with ripple",
+  "main": "button.js",
+  "module": "button.js",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "button.js",
+    "button.css"
+  ],
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "@intothesource/feedback-animation": "^1.0.4"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intothesource/button.git"
+  },
+  "keywords": [
+    "button",
+    "material",
+    "ripple"
+  ],
+  "author": "Ramon Valk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/intothesource/button/issues"
+  },
+  "homepage": "https://github.com/intothesource/button#readme"
+}
