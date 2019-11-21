@@ -1,1 +1,1 @@
-export * from './dist/main';
+export * from './dist/button';
