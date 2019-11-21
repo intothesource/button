@@ -6,7 +6,7 @@ class Button extends HTMLElement {
         this.createButtonElement();
         this.setButtonElementAttributes();
         this.removeAndSetButtonAttributes();
-        feedbackAnimation(this.querySelector('button'));
+        feedbackAnimation(this.querySelector('[data-its-button]'));
     }
 
     createButtonElement() {
