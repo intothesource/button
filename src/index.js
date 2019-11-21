@@ -3,6 +3,9 @@ import feedbackAnimation from '@intothesource/feedback-animation/feedback-animat
 class Button extends HTMLElement {
     constructor() {
         super();
+    }
+
+    connectedCallback() {
         this.createButtonElement();
         this.setButtonElementAttributes();
         this.removeAndSetButtonAttributes();
