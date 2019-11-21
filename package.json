@@ -1,6 +1,6 @@
 {
   "name": "@intothesource/button",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Material style button with ripple",
   "main": "button.js",
   "module": "button.js",
