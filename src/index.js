@@ -21,6 +21,7 @@ class Button extends HTMLElement {
     }
 
     setButtonElementAttributes() {
+        console.log(this.attributes);
         for (let attributeIndex = 0; attributeIndex < this.attributes.length; attributeIndex++) {
             this.querySelector('button').setAttribute(this.attributes[attributeIndex].name, this.attributes[attributeIndex].textContent);
         }
