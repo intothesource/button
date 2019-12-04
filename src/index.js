@@ -12,6 +12,11 @@ class Button extends HTMLElement {
         feedbackAnimation(this.querySelector('[data-its-button]'));
     }
 
+    attributeChangedCallback() {
+        this.setButtonElementAttributes();
+        this.removeAndSetButtonAttributes();
+    }
+
     createButtonElement() {
         const buttonElement = document.createElement('button');
         this.childNodes.forEach(element => {
