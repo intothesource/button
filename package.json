@@ -16,7 +16,7 @@
     "example": "example"
   },
   "dependencies": {
-    "@intothesource/feedback-animation": "^1.1.0"
+    "@intothesource/feedback-animation": "^1.1.1"
   },
   "devDependencies": {
     "webpack": "^4.41.2",
