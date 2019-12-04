@@ -23,7 +23,12 @@ class Button extends HTMLElement {
     setButtonElementAttributes() {
         console.log(this.attributes);
         while (this.attributes.length > 0) {
-            this.querySelector('button').setAttribute(this.attributes[0].name, this.attributes[0].textContent);
+            if (this.attributes[0].name[0] === '-') {
+                const dynamicAttributeContent = getComputedStyle(document.documentElement).getPropertyValue(this.attributes[0].name);
+                this.querySelector('button').setAttribute(this.attributes[0].name, dynamicAttributeContent);
+            } else {
+                this.querySelector('button').setAttribute(this.attributes[0].name, this.attributes[0].textContent);
+            }
         }
         this.querySelector('button').setAttribute('data-its-button', '');
     }

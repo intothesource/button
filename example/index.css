@@ -1,5 +1,9 @@
 @import '../node_modules/@intothesource/feedback-animation/feedback-animation.css';
 
+:root {
+  --color-test: #000;
+}
+
 html {
     box-sizing: border-box;
   }
