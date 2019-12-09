@@ -12,14 +12,14 @@ class Button extends HTMLElement {
         feedbackAnimation(this.querySelector('[data-its-button]'));
     }
 
-    attributeChangedCallback() {
-        this.setButtonElementAttributes();
-        this.removeAndSetButtonAttributes();
-    }
+    // attributeChangedCallback() {
+    //     this.setButtonElementAttributes();
+    //     this.removeAndSetButtonAttributes();
+    // }
 
     createButtonElement() {
         const buttonElement = document.createElement('button');
-        console.log(this.childNodes, buttonElement);
+        // console.log(this.childNodes, buttonElement);
         this.childNodes.forEach(element => {
             buttonElement.appendChild(element);
         });
@@ -27,8 +27,9 @@ class Button extends HTMLElement {
     }
 
     setButtonElementAttributes() {
-        console.log(this.attributes);
-        while (this.attributes.length > 0) {
+        // console.log(this.attributes);
+        for (let attributeIndex = 0; this.attributes.length >= attributeIndex; attributeIndex++  ) {
+            console.log(this.attributes[0].name[0]);
             if (this.attributes[0].name[0] === '-') {
                 const dynamicAttributeContent = getComputedStyle(document.documentElement).getPropertyValue(this.attributes[0].name);
                 this.querySelector('button').setAttribute(this.attributes[0].name, dynamicAttributeContent);
