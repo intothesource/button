@@ -19,6 +19,7 @@ class Button extends HTMLElement {
 
     createButtonElement() {
         const buttonElement = document.createElement('button');
+        console.log(this.childNodes, buttonElement);
         this.childNodes.forEach(element => {
             buttonElement.appendChild(element);
         });
