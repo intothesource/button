@@ -29,8 +29,8 @@ class Button extends HTMLElement {
     setButtonElementAttributes() {
         // console.log(this.attributes);
         for (let attributeIndex = 0; this.attributes.length >= attributeIndex; attributeIndex++  ) {
-            console.log(this.attributes[0].name[0]);
-            if (this.attributes[0].name[0] === '-') {
+            console.log(this.attributes[0].textContent[0]);
+            if (this.attributes[0].textContent[0] === '-') {
                 const dynamicAttributeContent = getComputedStyle(document.documentElement).getPropertyValue(this.attributes[0].name);
                 this.querySelector('button').setAttribute(this.attributes[0].name, dynamicAttributeContent);
             } else {
